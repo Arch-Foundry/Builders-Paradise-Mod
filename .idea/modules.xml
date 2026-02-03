@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/builders-paradise-mod-kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/builders-paradise-mod-kotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/builders-paradise-mod-kotlin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/builders-paradise-mod-kotlin.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/builders-paradise-mod-kotlin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/builders-paradise-mod-kotlin.test.iml" />
     </modules>
