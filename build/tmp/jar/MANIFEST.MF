@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: buildersparadise
+Specification-Vendor: archfoundry
+Specification-Version: 1
+Implementation-Title: builders-paradise-mod-kotlin
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor: archfoundry
+Implementation-Timestamp: 2026-02-03T14:29:05+0200
+
