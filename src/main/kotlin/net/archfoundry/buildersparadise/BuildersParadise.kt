@@ -23,8 +23,6 @@ object BuildersParadise {
         // RegistryModule.ITEMS.register(modBus)
 
         MinecraftForge.EVENT_BUS.register(this)
-
-        LOGGER.info("Builders Paradise (Kotlin) loaded successfully!")
     }
 
     private fun commonSetup(event: FMLCommonSetupEvent) {
