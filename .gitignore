@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Kotlin
+.kotlin/
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Minecraft Mod Development
+run/
+run-data/
+logs/
+crash-reports/
+
+# Log files
+*.log
+debug.log
+latest.log
