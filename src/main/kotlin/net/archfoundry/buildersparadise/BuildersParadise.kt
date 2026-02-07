@@ -4,24 +4,20 @@ import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.eventbus.api.IEventBus
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext
+import thedarkcolour.kotlinforforge.KotlinModLoadingContext
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 @Mod(BuildersParadise.MOD_ID)
-class BuildersParadise(modBus: IEventBus) {
+object BuildersParadise {
 
-    companion object {
-        const val MOD_ID = "buildersparadise"
-        val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
-    }
+    const val MOD_ID = "buildersparadise"
+    val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
 
     init {
-        val modBus = FMLJavaModLoadingContext.get().modEventBus
+        val modBus = KotlinModLoadingContext.get().getKEventBus()
 
-        modBus.addListener<FMLCommonSetupEvent> { event ->
-            this.commonSetup(event)
-        }
+        modBus.addListener(::commonSetup)
 
         // RegistryModule.BLOCKS.register(modBus)
         // RegistryModule.ITEMS.register(modBus)
