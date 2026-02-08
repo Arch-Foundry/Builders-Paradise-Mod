@@ -28,3 +28,10 @@ crash-reports/
 debug.log
 latest.log
 compile_log_*.txt
+build_debug_*.txt
+build_log_*.txt
+build_log_*.log
+build_error_*.txt
+build_error_*.log
+debug_*.txt
+debug_*.log
