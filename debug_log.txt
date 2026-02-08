@@ -1,0 +1,61 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :processResources UP-TO-DATE
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunClient
+
+> Task :compileKotlin
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:141:1 Expecting a top level declaration
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:101:123 Unresolved reference: TOOL_BINDING
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:112:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:113:9 No supertypes are accessible in this context
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:114:30 Unresolved reference: itemHandler
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:115:26 Unresolved reference: fluidTank
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:116:32 Unresolved reference: progress
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:119:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:120:9 No supertypes are accessible in this context
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:121:9 Unresolved reference: itemHandler
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:122:9 Unresolved reference: fluidTank
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:123:9 Unresolved reference: progress
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:127:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:128:16 Unresolved reference: saveWithoutMetadata
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:131:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:134:92 'this' is not defined in this context
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:138:9 Unresolved reference: setChanged
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:139:9 Unresolved reference: level
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:139:33 Unresolved reference: worldPosition
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:139:48 Unresolved reference: blockState
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/CastingTableBlockEntity.kt:139:60 Unresolved reference: blockState
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:459:55 Unresolved reference: TOOL_BINDING
+
+> Task :compileKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 18s
+10 actionable tasks: 4 executed, 6 up-to-date

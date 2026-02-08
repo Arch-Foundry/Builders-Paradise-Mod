@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "top": "buildersparadise:block/builder_station_top",
+        "bottom": "buildersparadise:block/builder_station_bottom",
+        "side": "buildersparadise:block/builder_station_side"
+    }
+}

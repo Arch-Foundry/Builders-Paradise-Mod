@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "buildersparadise:block/creator_station" },
+    "facing=south": { "model": "buildersparadise:block/creator_station", "y": 180 },
+    "facing=west":  { "model": "buildersparadise:block/creator_station", "y": 270 },
+    "facing=east":  { "model": "buildersparadise:block/creator_station", "y": 90 }
+  }
+}

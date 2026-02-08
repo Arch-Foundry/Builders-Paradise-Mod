@@ -27,3 +27,4 @@ crash-reports/
 *.log
 debug.log
 latest.log
+compile_log_*.txt

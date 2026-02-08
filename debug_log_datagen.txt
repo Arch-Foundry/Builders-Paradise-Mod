@@ -1,0 +1,781 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunData
+> Task :prepareRunDataCompile UP-TO-DATE
+
+> Task :runData
+2026-02-08 18:53:15,352 main WARN Advanced terminal features are not available in this environment
+[18:53:15] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\ashiw\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.16, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, buildersparadise, --all, --output, D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\src\generated\resources, --existing, D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\src\main\resources]
+[18:53:15] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.17 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[18:53:15] [main/DEBUG] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
+[18:53:15] [main/DEBUG] [cp.mo.mo.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[18:53:15] [main/DEBUG] [cp.mo.mo.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path GAMEDIR is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path MODSDIR is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data\mods
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path CONFIGDIR is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data\config
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path FMLCONFIG is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data\config\fml.toml
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: 
+[18:53:15] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [mixin,fml]
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.LauncherVersion/CORE]: Found FMLLauncher version 1.0
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML 1.0 loading
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Requesting CoreMods to not apply the fix for ASMAPI.findFirstInstructionBefore by default
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found AccessTransformer version : 8.0.4+66+master.c09db6d7
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found EventBus version : 6.2.33
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Found Runtime Dist Cleaner
+[18:53:15] [main/DEBUG] [ne.mi.co.CoreModEngine/]: CoreMods will preserve legacy behavior of ASMAPI.findFirstInstructionBefore for backwards-compatibility
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: FML found CoreMod version : 5.2.4
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Found ForgeSPI package implementation version 7.0.1+7.0.1+master.d2b38bf6
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Found ForgeSPI package specification 5
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[18:53:15] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@5a63f509
+[18:53:15] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/ashiw/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[18:53:15] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
+[18:53:15] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[18:53:15] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[18:53:15] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[18:53:15] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[18:53:15] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path GAMEDIR is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path MODSDIR is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data\mods
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path CONFIGDIR is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data\config
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLPaths/CORE]: Path FMLCONFIG is D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\run-data\config\fml.toml
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Loading configuration
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Preparing ModFile
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Preparing launch handler
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Using forgedatauserdev as launch service
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLLoader/CORE]: Received command line version data  : VersionInfo[forgeVersion=47.4.16, mcVersion=1.20.1, mcpVersion=20230612.114412, forgeGroup=net.minecraftforge]
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
+[18:53:15] [main/DEBUG] [cp.mo.mo.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
+[18:53:15] [main/DEBUG] [cp.mo.mo.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=srgtomcp:1234}
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
+[18:53:15] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Initiating mod scan
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModListHandler/CORE]: Found mod coordinates from lists: []
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.ta.CommonLaunchHandler/CORE]: Got mod coordinates buildersparadise%%D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\resources\main;buildersparadise%%D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\classes\java\main;buildersparadise%%D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\classes\kotlin\main from env
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.ta.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{buildersparadise=[D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\resources\main, D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\classes\java\main, D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\classes\kotlin\main]}]
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar with {minecraft} mods - versions {1.20.1}
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.16\4de914f18f755c1d5e11d9842c52e48312928187\javafmllanguage-1.20.1-47.4.16.jar
+[18:53:15] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.16\4de914f18f755c1d5e11d9842c52e48312928187\javafmllanguage-1.20.1-47.4.16.jar is missing mods.toml file
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.16\8de956db8928e6196ccdf9f39fa59fedd5edbf0a\lowcodelanguage-1.20.1-47.4.16.jar
+[18:53:15] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.16\8de956db8928e6196ccdf9f39fa59fedd5edbf0a\lowcodelanguage-1.20.1-47.4.16.jar is missing mods.toml file
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.16\a23beeb33d63c395afee6fc9a5dd27008ab45743\mclanguage-1.20.1-47.4.16.jar
+[18:53:15] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.16\a23beeb33d63c395afee6fc9a5dd27008ab45743\mclanguage-1.20.1-47.4.16.jar is missing mods.toml file
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.16\2dd456356718e73c81a72bb33fd713863b5c6beb\fmlcore-1.20.1-47.4.16.jar
+[18:53:15] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\ashiw\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.16\2dd456356718e73c81a72bb33fd713863b5c6beb\fmlcore-1.20.1-47.4.16.jar is missing mods.toml file
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\resources\main
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file main with {buildersparadise} mods - versions {1.0-SNAPSHOT}
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate /
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.4.16}
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jade-324717\4801177_mapped_official_1.20.1\jade-324717-4801177_mapped_official_1.20.1.jar
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file jade-324717-4801177_mapped_official_1.20.1.jar with {jade} mods - versions {11.6.3}
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\the-one-probe-245211\5159287_mapped_official_1.20.1\the-one-probe-245211-5159287_mapped_official_1.20.1.jar
+[18:53:15] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file the-one-probe-245211-5159287_mapped_official_1.20.1.jar with {theoneprobe} mods - versions {1.20.1-10.0.2}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jade-324717\4801177_mapped_official_1.20.1\jade-324717-4801177_mapped_official_1.20.1.jar
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file jade-324717-4801177_mapped_official_1.20.1.jar with {jade} mods - versions {11.6.3}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\the-one-probe-245211\5159287_mapped_official_1.20.1\the-one-probe-245211-5159287_mapped_official_1.20.1.jar
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file the-one-probe-245211-5159287_mapped_official_1.20.1.jar with {theoneprobe} mods - versions {1.20.1-10.0.2}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.UniqueModListBuilder/]: Found 2 mods for first modid theoneprobe, selecting most recent based on version data
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.UniqueModListBuilder/]: Selected file the-one-probe-245211-5159287_mapped_official_1.20.1.jar for modid theoneprobe with version 1.20.1-10.0.2
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.UniqueModListBuilder/]: Found 2 mods for first modid jade, selecting most recent based on version data
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.UniqueModListBuilder/]: Selected file jade-324717-4801177_mapped_official_1.20.1.jar for modid jade with version 11.6.3
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from main, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from the-one-probe-245211-5159287_mapped_official_1.20.1.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from , it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from jade-324717-4801177_mapped_official_1.20.1.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from mclanguage-1.20.1-47.4.16.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from javafmllanguage-1.20.1-47.4.16.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from fmlcore-1.20.1-47.4.16.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from lowcodelanguage-1.20.1-47.4.16.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate 
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file kffmod-4.11.0.jar with {kotlinforforge} mods - versions {4.11.0}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from kfflang-4.11.0.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from kfflib-4.11.0.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from kffmod-4.11.0.jar, it does not contain dependency information.
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate 
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file kffmod-4.11.0.jar with {kotlinforforge} mods - versions {4.11.0}
+[18:53:16] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar with {minecraft} mods - versions {1.20.1}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file C:\Users\ashiw\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.16_mapped_official_1.20.1\forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\resources\main
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file main with {buildersparadise} mods - versions {1.0-SNAPSHOT}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\build\resources\main with languages [LanguageSpec[languageName=kotlinforforge, acceptedVersions=[4.11.0,4.11.0]]]
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\the-one-probe-245211\5159287_mapped_official_1.20.1\the-one-probe-245211-5159287_mapped_official_1.20.1.jar
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file the-one-probe-245211-5159287_mapped_official_1.20.1.jar with {theoneprobe} mods - versions {1.20.1-10.0.2}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\the-one-probe-245211\5159287_mapped_official_1.20.1\the-one-probe-245211-5159287_mapped_official_1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate 
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file kffmod-4.11.0.jar with {kotlinforforge} mods - versions {4.11.0}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file  with languages [LanguageSpec[languageName=kotlinforforge, acceptedVersions=[4,)]]
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate /
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.4.16}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file / with languages [LanguageSpec[languageName=javafml, acceptedVersions=[24,]]]
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Found coremod field_to_method with Javascript path coremods/field_to_method.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Found coremod field_to_instanceof with Javascript path coremods/field_to_instanceof.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Found coremod add_bouncer_method with Javascript path coremods/add_bouncer_method.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Found coremod method_redirector with Javascript path coremods/method_redirector.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Found coremod coremods/field_to_method.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Found coremod coremods/field_to_instanceof.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Found coremod coremods/add_bouncer_method.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Found coremod coremods/method_redirector.js
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Considering mod file candidate C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jade-324717\4801177_mapped_official_1.20.1\jade-324717-4801177_mapped_official_1.20.1.jar
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFileInfo/LOADING]: Found valid mod file jade-324717-4801177_mapped_official_1.20.1.jar with {jade} mods - versions {11.6.3}
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file C:\Users\ashiw\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\jade-324717\4801177_mapped_official_1.20.1\jade-324717-4801177_mapped_official_1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[46,)]]
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file  with languages []
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.mo.ModFile/LOADING]: Loading mod file  with languages []
+[18:53:16] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.LanguageLoadingProvider/CORE]: Found 4 language providers
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.LanguageLoadingProvider/CORE]: Found language provider minecraft, version 1.0
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.LanguageLoadingProvider/CORE]: Found language provider javafml, version 47
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.LanguageLoadingProvider/CORE]: Found language provider kotlinforforge, version 4.11.0
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.LanguageLoadingProvider/CORE]: Found language provider lowcodefml, version 47
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.UniqueModListBuilder/]: Found 2 mods for first modid thedarkcolour.kotlinforforge.lib, selecting most recent based on version data
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.UniqueModListBuilder/]: Selected file kfflib-4.11.0.jar for modid thedarkcolour.kotlinforforge.lib with version 4.11.0
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.ModSorter/]: Configured system mods: [minecraft, forge]
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.ModSorter/]: Found system mod: minecraft
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.ModSorter/]: Found system mod: forge
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.ModSorter/LOADING]: Found 5 mod requirements (5 mandatory, 0 optional)
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.ModSorter/LOADING]: Found 0 mod requirements missing (0 mandatory, 0 optional)
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.MCPNamingService/CORE]: Loaded 33222 method mappings from methods.csv
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.MCPNamingService/CORE]: Loaded 31003 field mappings from fields.csv
+[18:53:16] [main/DEBUG] [cp.mo.mo.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading transformers
+[18:53:16] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service mixin
+[18:53:16] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service mixin
+[18:53:16] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service fml
+[18:53:16] [main/DEBUG] [ne.mi.fm.lo.FMLServiceProvider/CORE]: Loading coremod transformers
+[18:53:16] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_method.js
+[18:53:16] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[18:53:16] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_instanceof.js
+[18:53:17] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[18:53:17] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: Loading CoreMod from coremods/add_bouncer_method.js
+[18:53:17] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[18:53:17] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: Loading CoreMod from coremods/method_redirector.js
+[18:53:17] [main/DEBUG] [ne.mi.co.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@40f35e52 to Target : CLASS {Lnet/minecraft/world/level/biome/Biome;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@3c8a7e38 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/Structure;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@138aa3cc to Target : CLASS {Lnet/minecraft/world/effect/MobEffectInstance;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@10a98392 to Target : CLASS {Lnet/minecraft/world/level/block/LiquidBlock;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@30839e44 to Target : CLASS {Lnet/minecraft/world/item/BucketItem;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5f174dd2 to Target : CLASS {Lnet/minecraft/world/level/block/StairBlock;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@1945113f to Target : CLASS {Lnet/minecraft/world/level/block/FlowerPotBlock;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@45aca496 to Target : CLASS {Lnet/minecraft/world/item/ItemStack;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@697173d9 to Target : CLASS {Lnet/minecraft/network/play/client/CClientSettingsPacket;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/npc/Villager;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PhantomSpawner;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/SwampHutPiece;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/server/commands/SummonCommand;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/monster/Strider;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/raid/Raid;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/server/commands/RaidCommand;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/animal/frog/Tadpole;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/EntityType;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/monster/Zombie;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PatrolSpawner;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/ai/village/VillageSiege;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/NaturalSpawner;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/monster/ZombieVillager;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/animal/horse/SkeletonTrapGoal;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/monster/Spider;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/entity/npc/CatSpawner;} {} {V}
+[18:53:17] [main/DEBUG] [cp.mo.mo.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service fml
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[18:53:17] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(minecraft)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(minecraft)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(minecraft)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[18:53:17] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(buildersparadise)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(buildersparadise)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(buildersparadise)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(buildersparadise)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(buildersparadise)
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(buildersparadise)]
+[18:53:17] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(theoneprobe)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(theoneprobe)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(theoneprobe)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(theoneprobe)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(theoneprobe)
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(theoneprobe)]
+[18:53:17] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(kotlinforforge)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(kotlinforforge)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(kotlinforforge)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(kotlinforforge)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(kotlinforforge)
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(kotlinforforge)]
+[18:53:17] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(forge)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(forge)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(forge)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(forge)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(forge)
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[18:53:17] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(jade)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(jade)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(jade)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(jade)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(jade)
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(jade)]
+[18:53:17] [main/DEBUG] [mixin/]: Registering mixin config: jade.mixins.json
+[18:53:17] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(thedarkcolour.kotlinforforge.lib)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(thedarkcolour.kotlinforforge.lib)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(thedarkcolour.kotlinforforge.lib)
+[18:53:17] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(thedarkcolour.kotlinforforge.lib)
+[18:53:17] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(thedarkcolour.kotlinforforge.lib)
+[18:53:17] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(thedarkcolour.kotlinforforge.lib)]
+[18:53:17] [main/DEBUG] [mixin/]: inject() running with 8 agents
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(buildersparadise)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(theoneprobe)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(kotlinforforge)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(jade)]
+[18:53:17] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(thedarkcolour.kotlinforforge.lib)]
+[18:53:17] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\ashiw\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, buildersparadise, --all, --output, D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\src\generated\resources, --existing, D:\ashiw\Dev\IntelliJ Progects\Mods\BuildersParadise\Builders Paradise Mod - kotlin\src\main\resources]
+[18:53:17] [main/DEBUG] [mixin/]: Error cleaning class output directory: .mixin.out
+[18:53:17] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[18:53:17] [main/DEBUG] [mixin/]: Selecting config jade.mixins.json
+[18:53:17] [main/DEBUG] [mixin/]: Preparing jade.mixins.json (3)
+[18:53:17] [main/DEBUG] [mixin/]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[18:53:17] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[18:53:17] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[18:53:17] [main/DEBUG] [mixin/]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[18:53:17] [main/DEBUG] [mixin/]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[18:53:17] [main/DEBUG] [mixin/]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[18:53:17] [main/DEBUG] [io.ne.ut.in.lo.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[18:53:17] [main/DEBUG] [io.ne.ut.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[18:53:17] [main/DEBUG] [io.ne.ut.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[18:53:17] [main/INFO] [ne.mi.da.lo.DatagenModLoader/]: Initializing Data Gatherer for mods [buildersparadise]
+[18:53:18] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/EntityType
+[18:53:18] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
+[18:53:18] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/StairBlock
+[18:53:18] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/FlowerPotBlock
+[18:53:19] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
+[18:53:19] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/frog/Tadpole
+[18:53:19] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/BucketItem
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Spider
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Zombie
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/ZombieVillager
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/horse/SkeletonTrapGoal
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Strider
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/npc/Villager
+[18:53:20] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/effect/MobEffectInstance
+[18:53:21] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/Structure
+[18:53:21] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece
+[18:53:21] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/SwampHutPiece
+[18:53:21] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece
+[18:53:21] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece
+[18:53:21] [main/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
+[18:53:21] [main/DEBUG] [ne.mi.re.GameData/REGISTRIES]: Creating vanilla freeze snapshot
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:block Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:fluid Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:item Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:potion Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:block_entity_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:particle_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:menu Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:painting_variant Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_serializer Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:attribute Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:stat_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:command_argument_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:villager_profession Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:point_of_interest_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:memory_module_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:sensor_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:schedule Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:activity Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/carver Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/feature Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:chunk_status Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/block_state_provider_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/foliage_placer_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/tree_decorator_type Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome Sync: VANILLA -> ACTIVE
+[18:53:21] [main/DEBUG] [ne.mi.re.GameData/REGISTRIES]: Vanilla freeze snapshot created
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: -Dio.netty.noUnsafe: false
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: Java version: 17
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: sun.misc.Unsafe.copyMemory: available
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: java.nio.Buffer.address: available
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?] {}
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:282) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at net.minecraftforge.network.NetworkConstants.<clinit>(NetworkConstants.java:34) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraftforge.network.NetworkHooks.init(NetworkHooks.java:52) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:62) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:42) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraft.data.Main.main(Main.java:90) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.dataService(CommonLaunchHandler.java:107) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeDataUserdevLaunchHandler.devService(ForgeDataUserdevLaunchHandler.java:22) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 (in module io.netty.common) cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to module io.netty.common
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?] {}
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:561) ~[?:?] {}
+	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?] {}
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:34) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.AttributeKey$1.<init>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at io.netty.util.AttributeKey.<clinit>(AttributeKey.java:27) ~[netty-common-4.1.82.Final.jar:4.1.82.Final] {}
+	at net.minecraftforge.network.NetworkConstants.<clinit>(NetworkConstants.java:34) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraftforge.network.NetworkHooks.init(NetworkHooks.java:52) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraft.server.Bootstrap.bootStrap(Bootstrap.java:62) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:42) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at net.minecraft.data.Main.main(Main.java:90) ~[forge-1.20.1-47.4.16_mapped_official_1.20.1-recomp.jar:?] {re:classloading}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.dataService(CommonLaunchHandler.java:107) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeDataUserdevLaunchHandler.devService(ForgeDataUserdevLaunchHandler.java:22) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.4.16.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: sun.misc.Unsafe: available
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: maxDirectMemory: 16953376768 bytes (maybe)
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: -Dio.netty.tmpdir: C:\Users\ashiw\AppData\Local\Temp (java.io.tmpdir)
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: Platform: Windows
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[18:53:21] [main/DEBUG] [io.ne.ut.in.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
+[18:53:21] [main/DEBUG] [io.ne.ut.in.PlatformDependent/]: -Dio.netty.noPreferDirect: false
+[18:53:21] [main/DEBUG] [ne.mi.ne.NetworkHooks/]: Loading Network data for FML net version: FML3
+[18:53:21] [main/DEBUG] [ne.mi.fm.ModWorkManager/LOADING]: Using 32 threads for parallel mod-loading
+[18:53:21] [main/DEBUG] [th.ko.LoggerKt/LOADING]: Loading KotlinModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@254449bb - got cpw.mods.cl.ModuleClassLoader@7e46d648}
+[18:53:21] [main/DEBUG] [th.ko.LoggerKt/LOADING]: Creating KotlinModContainer instance for net.archfoundry.buildersparadise.BuildersParadise
+[18:53:21] [main/DEBUG] [ne.mi.fm.ja.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@254449bb - got cpw.mods.cl.ModuleClassLoader@7e46d648
+[18:53:21] [main/DEBUG] [ne.mi.fm.ja.FMLModContainer/LOADING]: Creating FMLModContainer instance for mcjty.theoneprobe.TheOneProbe
+[18:53:21] [main/DEBUG] [th.ko.LoggerKt/LOADING]: Loading KotlinModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@254449bb - got cpw.mods.cl.ModuleClassLoader@7e46d648}
+[18:53:21] [main/DEBUG] [th.ko.LoggerKt/LOADING]: Creating KotlinModContainer instance for thedarkcolour.kotlinforforge.test.KotlinForForge
+[18:53:21] [main/DEBUG] [ne.mi.fm.ja.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@254449bb - got cpw.mods.cl.ModuleClassLoader@7e46d648
+[18:53:21] [main/DEBUG] [ne.mi.fm.ja.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
+[18:53:21] [main/DEBUG] [ne.mi.fm.ja.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@254449bb - got cpw.mods.cl.ModuleClassLoader@7e46d648
+[18:53:21] [main/DEBUG] [ne.mi.fm.ja.FMLModContainer/LOADING]: Creating FMLModContainer instance for snownee.jade.util.CommonProxy
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.ve.fo.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 47.4 from cpw.mods.modlauncher.TransformingClassLoader@254449bb
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.ve.fo.ForgeVersion/CORE]: Found Forge version 47.4.16
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.ve.fo.ForgeVersion/CORE]: Found Forge spec 47.4
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.ve.fo.ForgeVersion/CORE]: Found Forge group net.minecraftforge
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.ve.mc.MCPVersion/CORE]: MCP Version package package net.minecraftforge.versions.mcp, Minecraft, version 1.20.1 from cpw.mods.modlauncher.TransformingClassLoader@254449bb
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.ve.mc.MCPVersion/CORE]: Found MC version information 1.20.1
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.ve.mc.MCPVersion/CORE]: Found MCP version information 20230612.114412
+[18:53:21] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.16, for MC 1.20.1 with MCP 20230612.114412
+[18:53:21] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v47.4.16 Initialized
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.co.ConfigTracker/CONFIG]: Config file theoneprobe-client.toml for theoneprobe tracking
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.co.ConfigTracker/CONFIG]: Config file theoneprobe-common.toml for theoneprobe tracking
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for theoneprobe
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Auto-subscribing mcjty.theoneprobe.config.ConfigReload to MOD
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Auto-subscribing mcjty.theoneprobe.TheOneProbe to MOD
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.co.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.co.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ModLoadingContext/]: Attempted to register an empty config for type COMMON on mod forge
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for jade
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for forge
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$CommonHandler to MOD
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$ColorRegisterHandler to MOD
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.model.data.ModelDataManager to FORGE
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ForgeHooksClient$ClientEvents to MOD
+[18:53:21] [modloading-worker-0/DEBUG] [ne.mi.fm.ja.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ClientForgeMod to MOD
+[18:53:22] [modloading-worker-0/INFO] [th.ko.te.KotlinForForge/]: Kotlin For Forge Enabled!
+[18:53:22] [modloading-worker-0/DEBUG] [th.ko.LoggerKt/LOADING]: Attempting to inject @EventBusSubscriber kotlin objects in to the event bus for kotlinforforge
+[18:53:22] [modloading-worker-0/DEBUG] [th.ko.LoggerKt/LOADING]: Attempting to inject @EventBusSubscriber kotlin objects in to the event bus for buildersparadise
+[18:53:22] [modloading-worker-0/DEBUG] [th.ko.LoggerKt/LOADING]: Auto-subscribing kotlin object net.minecraftforge.fml.common.Mod$EventBusSubscriber to FORGE
+[18:53:22] [modloading-worker-0/DEBUG] [th.ko.LoggerKt/LOADING]: Auto-subscribing kotlin object net.minecraftforge.fml.common.Mod$EventBusSubscriber to FORGE
+[18:53:22] [modloading-worker-0/DEBUG] [mixin/]: Mixing FontMixin from jade.mixins.json into net.minecraft.client.gui.Font
+[18:53:22] [modloading-worker-0/DEBUG] [mixin/]: jade.mixins.json:FontMixin: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[18:53:22] [modloading-worker-0/FATAL] [mixin/]: Mixin apply failed jade.mixins.json:FontMixin -> net.minecraft.client.gui.Font: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException Critical injection failure: @Inject annotation on jade$renderChar could not find any targets matching 'Lnet/minecraft/client/gui/Font;m_253238_(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFI)V' in net.minecraft.client.gui.Font. Using refmap jade.refmap.json [PREINJECT Applicator Phase -> jade.mixins.json:FontMixin -> Prepare Injections ->  -> handler$zza000$jade$renderChar(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> Parse]
+org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on jade$renderChar could not find any targets matching 'Lnet/minecraft/client/gui/Font;m_253238_(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFI)V' in net.minecraft.client.gui.Font. Using refmap jade.refmap.json [PREINJECT Applicator Phase -> jade.mixins.json:FontMixin -> Prepare Injections ->  -> handler$zza000$jade$renderChar(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> Parse]
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.validateTargets(InjectionInfo.java:656) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.findTargets(InjectionInfo.java:587) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:330) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:316) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:308) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:46) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:149) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:708) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1311) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:1042) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:393) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?] {}
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3375) ~[?:?] {}
+	at java.lang.Class.getConstructor0(Class.java:3580) ~[?:?] {}
+	at java.lang.Class.getConstructor(Class.java:2273) ~[?:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.computeListenerList(EventListenerHelper.java:58) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.lambda$getListenerListInternal$0(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.CacheConcurrent.computeIfAbsent(CacheConcurrent.java:37) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.Cache.computeIfAbsent(Cache.java:17) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerListInternal(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerList(EventListenerHelper.java:33) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.addToListeners(EventBus.java:280) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:273) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerListener(EventBus.java:164) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerObject(EventBus.java:87) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:134) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.registerTo(AutoKotlinEventBusSubscriber.kt:135) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.inject(AutoKotlinEventBusSubscriber.kt:95) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.KotlinModContainer.constructMod(KotlinModContainer.kt:74) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.16.jar%23195!/:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+[18:53:22] [modloading-worker-0/FATAL] [th.ko.LoggerKt/LOADING]: Failed to load mod class Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber; for @EventBusSubscriber annotation
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?] {}
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3375) ~[?:?] {}
+	at java.lang.Class.getConstructor0(Class.java:3580) ~[?:?] {}
+	at java.lang.Class.getConstructor(Class.java:2273) ~[?:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.computeListenerList(EventListenerHelper.java:58) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.lambda$getListenerListInternal$0(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.CacheConcurrent.computeIfAbsent(CacheConcurrent.java:37) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.Cache.computeIfAbsent(Cache.java:17) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerListInternal(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerList(EventListenerHelper.java:33) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.addToListeners(EventBus.java:280) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:273) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerListener(EventBus.java:164) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerObject(EventBus.java:87) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:134) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.registerTo(AutoKotlinEventBusSubscriber.kt:135) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.inject(AutoKotlinEventBusSubscriber.kt:95) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.KotlinModContainer.constructMod(KotlinModContainer.kt:74) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.16.jar%23195!/:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [jade.mixins.json:FontMixin] from phase [DEFAULT] in config [jade.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:636) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:588) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	... 39 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on jade$renderChar could not find any targets matching 'Lnet/minecraft/client/gui/Font;m_253238_(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFI)V' in net.minecraft.client.gui.Font. Using refmap jade.refmap.json [PREINJECT Applicator Phase -> jade.mixins.json:FontMixin -> Prepare Injections ->  -> handler$zza000$jade$renderChar(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> Parse]
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.validateTargets(InjectionInfo.java:656) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.findTargets(InjectionInfo.java:587) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:330) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:316) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:308) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:46) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:149) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:708) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1311) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:1042) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:393) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	... 39 more
+[18:53:22] [modloading-worker-0/ERROR] [th.ko.LoggerKt/LOADING]: Failed to register Automatic Kotlin subscribers. ModID: buildersparadise, class net.archfoundry.buildersparadise.BuildersParadise
+java.lang.RuntimeException: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.inject(AutoKotlinEventBusSubscriber.kt:98) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.KotlinModContainer.constructMod(KotlinModContainer.kt:74) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.16.jar%23195!/:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?] {}
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3375) ~[?:?] {}
+	at java.lang.Class.getConstructor0(Class.java:3580) ~[?:?] {}
+	at java.lang.Class.getConstructor(Class.java:2273) ~[?:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.computeListenerList(EventListenerHelper.java:58) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.lambda$getListenerListInternal$0(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.CacheConcurrent.computeIfAbsent(CacheConcurrent.java:37) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.Cache.computeIfAbsent(Cache.java:17) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerListInternal(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerList(EventListenerHelper.java:33) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.addToListeners(EventBus.java:280) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:273) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerListener(EventBus.java:164) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerObject(EventBus.java:87) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:134) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.registerTo(AutoKotlinEventBusSubscriber.kt:135) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.inject(AutoKotlinEventBusSubscriber.kt:95) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	... 9 more
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [jade.mixins.json:FontMixin] from phase [DEFAULT] in config [jade.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:636) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:588) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?] {}
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3375) ~[?:?] {}
+	at java.lang.Class.getConstructor0(Class.java:3580) ~[?:?] {}
+	at java.lang.Class.getConstructor(Class.java:2273) ~[?:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.computeListenerList(EventListenerHelper.java:58) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.lambda$getListenerListInternal$0(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.CacheConcurrent.computeIfAbsent(CacheConcurrent.java:37) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.Cache.computeIfAbsent(Cache.java:17) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerListInternal(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerList(EventListenerHelper.java:33) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.addToListeners(EventBus.java:280) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:273) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerListener(EventBus.java:164) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerObject(EventBus.java:87) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:134) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.registerTo(AutoKotlinEventBusSubscriber.kt:135) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.inject(AutoKotlinEventBusSubscriber.kt:95) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	... 9 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on jade$renderChar could not find any targets matching 'Lnet/minecraft/client/gui/Font;m_253238_(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFI)V' in net.minecraft.client.gui.Font. Using refmap jade.refmap.json [PREINJECT Applicator Phase -> jade.mixins.json:FontMixin -> Prepare Injections ->  -> handler$zza000$jade$renderChar(Lnet/minecraft/client/gui/font/glyphs/BakedGlyph;ZZFFFLorg/joml/Matrix4f;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> Parse]
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.validateTargets(InjectionInfo.java:656) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.findTargets(InjectionInfo.java:587) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:330) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:316) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:308) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:46) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?] {}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:149) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:708) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1311) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:1042) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:393) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?] {}
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3375) ~[?:?] {}
+	at java.lang.Class.getConstructor0(Class.java:3580) ~[?:?] {}
+	at java.lang.Class.getConstructor(Class.java:2273) ~[?:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.computeListenerList(EventListenerHelper.java:58) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.lambda$getListenerListInternal$0(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.CacheConcurrent.computeIfAbsent(CacheConcurrent.java:37) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.internal.Cache.computeIfAbsent(Cache.java:17) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerListInternal(EventListenerHelper.java:44) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.api.EventListenerHelper.getListenerList(EventListenerHelper.java:33) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.addToListeners(EventBus.java:280) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:273) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerListener(EventBus.java:164) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.registerObject(EventBus.java:87) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.register(EventBus.java:134) ~[eventbus-6.2.33.jar%23115!/:?] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.registerTo(AutoKotlinEventBusSubscriber.kt:135) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	at thedarkcolour.kotlinforforge.AutoKotlinEventBusSubscriber.inject(AutoKotlinEventBusSubscriber.kt:95) ~[kfflang-4.11.0.jar%23207!/:4.11.0] {}
+	... 9 more
+[18:53:22] [main/FATAL] [ne.mi.fm.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found
+Exception in thread "main" java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:32)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.run(Launcher.java:108)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.main(Launcher.java:78)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher@1.1.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.16/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.16/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.dataService(CommonLaunchHandler.java:107)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.16/net.minecraftforge.fml.loading.targets.ForgeDataUserdevLaunchHandler.devService(ForgeDataUserdevLaunchHandler.java:22)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.16/net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+	... 7 more
+Caused by: net.minecraftforge.fml.LoadingFailedException: Loading errors encountered: [
+	fml.modloading.failedtoloadmod
+]
+	at LAYER PLUGIN/fmlcore@1.20.1-47.4.16/net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:246)
+	at LAYER PLUGIN/fmlcore@1.20.1-47.4.16/net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$20(ModLoader.java:210)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at LAYER PLUGIN/fmlcore@1.20.1-47.4.16/net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:210)
+	at LAYER PLUGIN/fmlcore@1.20.1-47.4.16/net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at LAYER PLUGIN/fmlcore@1.20.1-47.4.16/net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183)
+	at TRANSFORMER/forge@47.4.16/net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:43)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.data.Main.main(Main.java:90)
+	... 16 more
+
+> Task :runData FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':runData'.
+> Process 'command 'C:\Users\ashiw\.jdks\ms-17.0.17\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 21s
+11 actionable tasks: 4 executed, 7 up-to-date

@@ -1,0 +1,69 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :processResources UP-TO-DATE
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunClient
+
+> Task :compileKotlin
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:212:1 Expecting a top level declaration
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:123:21 Unresolved reference: entity
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:123:28 Variable expected
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:124:21 This function must return a value of type Boolean
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:131:21 Unresolved reference: entity
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:131:28 Variable expected
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:132:21 This function must return a value of type Boolean
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:140:21 Unresolved reference: entity
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:140:28 Variable expected
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:141:21 This function must return a value of type Boolean
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:177:25 Unresolved reference: entity
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:177:32 Variable expected
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:181:21 Unresolved reference: entity
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:181:28 Variable expected
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:183:13 A 'return' expression required in a function with a block body ('{...}')
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:187:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:188:9 No supertypes are accessible in this context
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:189:34 Unresolved reference: active
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:192:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:193:9 No supertypes are accessible in this context
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:194:9 Unresolved reference: active
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:198:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:199:16 Unresolved reference: saveWithoutMetadata
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:202:5 Modifier 'override' is not applicable to 'top level function'
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:205:92 'this' is not defined in this context
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:209:9 Unresolved reference: setChanged
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:210:9 Unresolved reference: level
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:210:33 Unresolved reference: worldPosition
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:210:48 Unresolved reference: blockState
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/FaucetBlockEntity.kt:210:60 Unresolved reference: blockState
+
+> Task :compileKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+
+BUILD FAILED in 17s
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+10 actionable tasks: 4 executed, 6 up-to-date

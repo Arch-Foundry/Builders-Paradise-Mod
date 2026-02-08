@@ -1,0 +1,28 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :processResources UP-TO-DATE
+
+> Task :compileKotlin
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/client/tooltip/PonderTooltipHandler.kt:79:64 Expecting an element
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/client/tooltip/PonderTooltipHandler.kt:79:71 Expecting an expression
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/client/tooltip/PonderTooltipHandler.kt:79:60 Unresolved reference: GOLD
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/client/tooltip/PonderTooltipHandler.kt:79:60 Unsupported [literal prefixes and suffixes]
+
+> Task :compileKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 52s
+3 actionable tasks: 2 executed, 1 up-to-date

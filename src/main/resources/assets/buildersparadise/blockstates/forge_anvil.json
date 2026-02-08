@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "buildersparadise:block/forge_anvil"
+    },
+    "facing=south": {
+      "model": "buildersparadise:block/forge_anvil",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "buildersparadise:block/forge_anvil",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "buildersparadise:block/forge_anvil",
+      "y": 90
+    }
+  }
+}

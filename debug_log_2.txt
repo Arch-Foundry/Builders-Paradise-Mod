@@ -1,0 +1,55 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors
+> Task :processResources UP-TO-DATE
+> Task :downloadMcpConfig
+> Task :extractSrg UP-TO-DATE
+> Task :createSrgToMcp UP-TO-DATE
+> Task :downloadMCMeta UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :extractNatives UP-TO-DATE
+> Task :makeSrcDirs
+> Task :prepareRuns
+> Task :prepareRunClient
+
+> Task :compileKotlin
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/SmelteryBlockEntity.kt:81:17 Variable 'burning' is assigned but never accessed
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/entity/SmelteryBlockEntity.kt:134:21 The value 'true' assigned to 'var burning: Boolean defined in net.archfoundry.buildersparadise.block.entity.SmelteryBlockEntity.Companion.tick' is never used
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:159:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:168:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:174:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:183:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:191:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:196:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:201:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:209:40 Type mismatch: inferred type is Nothing? but Type<*> was expected
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:257:74 'constructor ResourceLocation(String!)' is deprecated. Deprecated in Java
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:265:74 'constructor ResourceLocation(String!)' is deprecated. Deprecated in Java
+w: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/registry/RegistryModule.kt:437:49 Parameter 'parameters' is never used, could be renamed to _
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/CreatorStationBlock.kt:48:25 'when' expression must be exhaustive, add necessary 'AXE_HEAD', 'SHOVEL_HEAD', 'SWORD_BLADE' branches or 'else' branch instead
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/ForgeAnvilBlock.kt:58:29 'when' expression must be exhaustive, add necessary 'AXE_HEAD', 'SHOVEL_HEAD', 'SWORD_BLADE' branches or 'else' branch instead
+e: file:///D:/ashiw/Dev/IntelliJ%20Progects/Mods/BuildersParadise/Builders%20Paradise%20Mod%20-%20kotlin/src/main/kotlin/net/archfoundry/buildersparadise/block/ForgeAnvilBlock.kt:94:29 'when' expression must be exhaustive, add necessary 'AXE_HEAD', 'SHOVEL_HEAD', 'SWORD_BLADE' branches or 'else' branch instead
+
+> Task :compileKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 20s
+10 actionable tasks: 4 executed, 6 up-to-date

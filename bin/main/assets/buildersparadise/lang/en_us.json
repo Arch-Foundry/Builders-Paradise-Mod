@@ -1,0 +1,14 @@
+{
+    "item.buildersparadise.blueprint": "Blueprint",
+    "block.buildersparadise.builder_station": "Builder Station",
+    "block.buildersparadise.placeholder_block": "Placeholder Block",
+    "block.buildersparadise.smeltery_block": "Smeltery",
+    "block.buildersparadise.casting_table": "Casting Table",
+    "block.buildersparadise.casting_basin": "Casting Basin",
+    "block.buildersparadise.faucet": "Faucet",
+    "fluid_type.buildersparadise.molten_stone": "Molten Stone",
+    "item.buildersparadise.molten_stone_bucket": "Molten Stone Bucket",
+    "itemGroup.buildersparadise_tab": "Builder's Paradise",
+    "container.buildersparadise.builder_station": "Builder Station",
+    "container.buildersparadise.smeltery": "Smeltery"
+}
