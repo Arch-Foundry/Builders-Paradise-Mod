@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "buildersparadise:item/molten_stone_bucket"
-  }
-}
+{ "parent": "item/generated", "textures": { "layer0": "buildersparadise:item/molten_stone_bucket" } }
